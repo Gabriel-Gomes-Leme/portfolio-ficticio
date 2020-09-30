@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!-- site para comprimir img= tiny png
+        entrar no developers.google para ver as boas práticas antes de publicar um site
+        usar o html minifier para minificar o html, assim serve para o css e js
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage It</title>
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-grid.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet"> 
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="trigger-top-bar"></div>
+    <div class="border-top-left"></div>
+    <div class="border-bottom-right"></div>
+    <div class="preloader">
+        <div class="preloader-inner">
+            <img src="../../imagens/lemon-loader.svg" class="mar-bot-15">
+            <p class="text-light mar-top-15">Aguarde um pouco... estamos preparando a limonada</p>
+        </div>
+    </div>
+    <div class="overlay toggle-gallery"> </div>
+    <div class="overlay-menu toggle-menu"> </div>
+
+    <div class="gallery-frame-container">
+        <div class="gallery-frame-inner">
+            <button class="toggle-gallery close-gallery"><ion-icon name="close-outline"></ion-icon></button>
+            <img src="img/frame-smartphone.png" class="gallery-frame">
+            <div class="skeleton-loading">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <img src="" class="gallery-frame-image" data-index="">
+        </div>
+        <div class="item-next-prev">
+            <div class="item-prev">
+                <ion-icon name="caret-back-outline"></ion-icon>
+            </div>
+            <div class="item-counter">
+                <span class="current-slide">01</span> 
+                <span class="total-slide">05</span>
+            </div>
+            <div class="item-next">
+                <ion-icon name="caret-forward-outline"></ion-icon>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="topbar">
+        <div class="logo logo-big">
+            <img src="../../imagens/logo.svg"  alt="logo JL">
+        </div>
+        <nav class="menu"> <!-- informa para os browsers que abriga um menu de navegação-->
+            <a href="../../index.html"> Home </a>
+            <a href="../index.html"> Portfolio </a>
+            <a href="../../sobre/index.html"> Sobre</a>
+        </nav>
+    </header>
+    <button class="btn-menu-mob toggle-menu">
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <nav class="menu-mob menu-is-closed"> <!-- informa para os browsers que abriga um menu de navegação-->
+        <a href="../../index.html"> Home </a>
+        <a href="../index.html"> Portfolio </a>
+        <a href="../../sobre/index.html"> Sobre</a>
+    </nav>
+    <div class="contact-info bg-black text-light">
+        <div class="contact-info-inner">
+            <h2 class="title text-green"> Contato</h2>
+            <p>
+                gabrielgl20@outlook.com
+            </p>
+            <p> 
+                +55 11 968497068
+            </p>
+            <div class="social-links">
+                <a href="#" class="social"><img src="../../imagens/icon_insta.png"></a>
+                <a href="#" class="social"><img src="../../imagens/icon_face.png"></a>
+                <a href="#" class="social"><img src="../../imagens/icon_twitter.png"></a>
+            </div>
+        </div>
+        <div class="corner">
+        
+        </div>
+    </div>
+    <button class="btn-contact">
+
+    </button>
+    <div class="page-wrapper">
+        <section class="container-fluid hero-banner">
+            <div class="container">
+               <div class="row text-light hero-inner align-items-center">
+                  <div class="col-sm-12 p-0 pl-sm-3 pr-sm-3">
+                      <div class="hero-inner-content">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h1 class="title title-medio"> Manage it! Aplicativo Mobile</h1>
+                            </div>
+                            <div class="col-sm-12 col-lg-3">
+                                <div class="project-stats">
+                                    <p> <span class="text-green">Projeto :</span> Aplicativo Mobile</p>
+                                    <p> <span class="text-green">Cliente :</span> Manage it</p>
+                                    <p> <span class="text-green">Serviços :</span> UI design</p>
+                                    <a class="btn btn-medium btn-green mar-top-15" >Visitar site <ion-icon name="arrow-redo"></ion-icon></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-9">
+                                <div class="project-description">
+                                    <p>Lorem ipsum <span class="text-green">Manage It</span>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                     </p>
+                                     <p>
+                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                     </p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+  
+                  </div>
+               </div>
+            </div>
+        </section>
+        <main class="post">
+          <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <section class="post-section">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-8 offset-md-2 text-center text-light mar-bot-30"  data-aos="flip-up" data-aos-delay="100" data-aos-duration="800">
+                                    <h2 class="title title-medio text-green mar-bot-15"> O desafio</h2>
+                                    <p>Lorem ipsum <span class="text-green">Manage It, consectetur adipiscing elit,</span> sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                     </p>
+                                     <p>
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    </p>
+                                </div>
+                                <div class="col-sm-12 mar-top-45 rellax" data-rellax-speed="1" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                                    <img src="img/processo-1.png" class="img-responsive" alt="processo 1" title="Manage it app">
+                                </div>
+                                <div class="col-sm-12 col-md-6 text-light mar-top-30 text-center-mob" data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
+                                    <h2 class="title title-medio text-green mar-bot-15"> Gerando ideias</h2>
+                                    <p>Lorem ipsum Manage It, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                        aliqua. <span class="text-green">Ut enim ad minim veniam, quis nostrud exercitation </span> ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                     </p>
+                                     <p>
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    </p>
+                                </div>
+                                <div class="col-sm-12 col-md-6 mar-top-45" data-aos="flip-down" data-aos-delay="600" data-aos-duration="1000">
+                                    <img src="img/processo-2.png" class="img-responsive" alt="processo 1" title="Manage it app">
+                                </div>
+                            </div>
+                        </section>
+                      </div>
+                </div>
+          </div>
+            <section class="post-section section-blue pre-gallery">
+                <div class="container"> <!-- container é uma classe do bootstrap que centraliza todos os elementos-->
+                    <div class="row">
+                        <div class="col-sm-10 offset-sm-1">
+                            <img src="img/previa-1.png" alt="imagem de prévia do app" title="imagem de prévia do app" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="post-section post-gallery">
+                <div class="container">
+                    <div class="row">       
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mar-bot-45">
+                            <div class="thumb-box">
+                             <img data-item="1" data-src="img/app-1.png" src="img/bg-thumb.jpg" alt="tela do app manage-it" class="img-responsive thumb-img">
+                            </div>
+                        </div>
+                         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mar-bot-45">
+                             <div class="thumb-box">
+                              <img data-item="2" data-src="img/app-2.png" src="img/bg-thumb.jpg" alt="tela do app manage-it"  class="img-responsive thumb-img">
+                            </div>
+                        </div>
+                         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mar-bot-45">
+                             <div class="thumb-box">
+                                <img data-item="3" data-src="img/app-3.png" src="img/bg-thumb.jpg" alt="tela do app manage-it"  class="img-responsive thumb-img">
+                            </div>
+                        </div>
+                         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mar-bot-45">
+                             <div class="thumb-box">
+                                <img data-item="4" data-src="img/app-4.png" src="img/bg-thumb.jpg" alt="tela do app manage-it"  class="img-responsive thumb-img">
+                            </div>
+                        </div>
+                         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mar-bot-45">
+                             <div class="thumb-box">
+                                <img data-item="5" data-src="img/app-5.png" src="img/bg-thumb.jpg" alt="tela do app manage-it"  class="img-responsive thumb-img">
+                            </div>
+                        </div>
+                         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mar-bot-45">
+                             <div class="thumb-box">
+                                 <img data-item="6" data-src="img/app-6.png"  src="img/bg-thumb.jpg" alt="tela do app manage-it"  class="img-responsive thumb-img">
+                            </div>
+                        </div>
+                         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mar-bot-45">
+                             <div class="thumb-box">
+                              <img data-item="7" data-src="img/app-7.png"  src="img/bg-thumb.jpg" alt="tela do app manage-it"  class="img-responsive thumb-img">
+                            </div>
+                        </div>
+                         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mar-bot-45">
+                             <div class="thumb-box">
+                                 <img data-item="8" data-src="img/app-8.png"  src="img/bg-thumb.jpg" alt="tela do app manage-it"  class="img-responsive thumb-img">
+                            </div>
+                        </div>
+                         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mar-bot-45">
+                             <div class="thumb-box">
+                            <img data-item="9" data-src="img/app-9.png" src="img/bg-thumb.jpg" alt="tela do app manage-it"  class="img-responsive thumb-img">
+                            </div>
+                        </div>
+                         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mar-bot-45">
+                             <div class="thumb-box">
+                            <img data-item="10" data-src="img/app-10.png" src="img/bg-thumb.jpg" alt="tela do app manage-it"  class="img-responsive thumb-img">
+                            </div>
+                        </div>
+                         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mar-bot-45">
+                             <div class="thumb-box">
+                            <img data-item="11" data-src="img/app-11.png" src="img/bg-thumb.jpg" alt="tela do app manage-it"  class="img-responsive thumb-img">
+                            </div>
+                        </div>
+                         <div class="col-6 col-sm-6 col-md-4 col-lg-3 mar-bot-45">
+                             <div class="thumb-box">
+                            <img data-item="12" data-src="img/app-12.png" src="img/bg-thumb.jpg" alt="tela do app manage-it"  class="img-responsive thumb-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
+    <script src="../../js/gallery.js"></script>
+    <script src="../../js/main.js"></script>
+
+    <script>
+        AOS.init();
+        var rellax = new Rellax('.rellax');
+
+        // Fazendo o lazy loading das imagens
+        var galleryItem = document.querySelectorAll('.post-gallery img')
+        for (var i = 0; i < galleryItem.length; i++) {
+        new Waypoint.Inview({
+            element: galleryItem[i],
+            entered: function() { // o entered significa que a função será executada apenas quando o elemento entrar por completo na tela
+                var getfullImage=this.element.getAttribute('data-src');
+                this.element.setAttribute('src', getfullImage);
+            }
+        })
+        }
+    </script>
+
+</body>
+</html>

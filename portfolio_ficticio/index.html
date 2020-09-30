@@ -1,0 +1,294 @@
+<!DOCTYPE html> <!-- cubic bazier css, olhar esse site para animações
+waypoints animar ao scroll-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Leme - Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet"> 
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="trigger-top-bar"></div>
+    <div class="border-top-left"></div>
+    <div class="border-bottom-right"></div>
+
+    <div class="preloader">
+        <div class="preloader-inner">
+            <img src="imagens/lemon-loader.svg" class="mar-bot-15">
+            <p class="text-light mar-top-15">Aguarde um pouco... estamos preparando a limonada</p>
+        </div>
+    </div>
+    <div class="overlay toggle-modal"> </div>
+    <div class="overlay-menu toggle-menu"> </div>
+
+    <div class="modal bg-black" id="modal-orcamento">
+        <div class="modal-header">
+            <h1 class="title text-green mar-bot-15"> Solicite um orçamento</h1>
+            <button class="close-modal toggle-modal"> X</button>
+        </div>
+        <div class="modal-body">
+           <div class="row">
+               <div class="col-sm-12">
+                <p class="text-light"> Por favor, informe os dados abaixo, e entrarei em contato com você o mais breve possível</p>
+               </div>
+           </div>
+           <div class="row mar-top-15">
+               <div class="col-sm-12">
+                <form class="formulario">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="nome" class="text-light"> Nome</label>
+                            <input type="text" name="nome" id="nome" class="field">
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="email" class="text-light"> Email</label>
+                            <input type="email" name="email" id="email" class="field">
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="telefone" class="text-light"> Telefone</label>
+                            <input type="tel" name="telefone" id="telefone" class="field">
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="site" class="text-light"> Site</label>
+                            <input type="text" name="site" id="site" class="field">
+                        </div>
+                        <div class="col-sm-12 col-md-12 mar-top-15">
+                            <label for="mensagem" class="text-light"> Escreva abaixo o projeto no qual necessita orçamento</label>
+                            <textarea id="mensagem" name="mensagem" rows="8" class="textarea">
+
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end mar-top-15">
+                        <div class="col-sm-12 col-md-6">
+                            <button class="btn btn-large btn-green btn-block"> Enviar</button>
+                        </div>
+                    </div>
+                </form>
+               </div>
+           </div>
+        </div>
+    </div>
+
+    <header class="topbar">
+        <div class="logo logo-big">
+            <img src="imagens/logo.svg"  alt="logo JL">
+        </div>
+        <nav class="menu"> <!-- informa para os browsers que abriga um menu de navegação-->
+            <a href="index.html"> Home </a>
+            <a href="portfolio/index.html"> Portfolio </a>
+            <a href="sobre/index.html"> Sobre</a>
+        </nav>
+    </header>
+    <button class="btn-menu-mob toggle-menu">
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <nav class="menu-mob menu-is-closed"> <!-- informa para os browsers que abriga um menu de navegação-->
+        <a href="index.html"> Home </a>
+        <a href="portfolio/index.html"> Portfolio </a>
+        <a href="sobre/index.html"> Sobre</a>
+    </nav>
+
+    <div class="contact-info bg-black text-light">
+        <div class="contact-info-inner">
+            <h2 class="title text-green"> Contato</h2>
+            <p>
+                gabrielgl20@outlook.com
+            </p>
+            <p> 
+                +55 11 968497068
+            </p>
+            <div class="social-links">
+                <a href="#" class="social"><img src="imagens/icon_insta.png"></a>
+                <a href="#" class="social"><img src="imagens/icon_face.png"></a>
+                <a href="#" class="social"><img src="imagens/icon_twitter.png"></a>
+            </div>
+        </div>
+        <div class="corner">
+        
+        </div>
+    </div>
+    <button class="btn-contact">
+
+    </button>
+    <div class="page-wrapper">
+        <section class="full-height first-section home-presentation" id="home-presentation"> 
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-10 col-md-10 offset-md-1 col-lg-4 offset-lg-1 col-xl-3 offset-xl-2 display-text">
+                        <h1 class="title text-green title-xlarge"> Olá </h1>
+                        <p class="text-light"> Meu nome é <span class="text-green">gabriel Leme</span>, lorem ipsum knocae <span class="text-green">Web developer</span>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        <button class="btn btn-large btn-green mar-top-15 toggle-modal">Solicite um orçamento</button>
+                    </div>
+                </div>
+            <div class="scroll-down">
+                <div class="arrow-down">
+                    <img src="imagens/arrow-down.svg" alt="role a página">
+                </div>
+            </div>
+        </section>
+        <section class="full-height" id="home-portfolio">
+            <div class="container-fluid nopadding">
+                <div class="row">
+                    <div class="col-sm-12 mar-top-45 d-block d-sm-block d-lg-none">
+                        <h2 class=" text-center title title-large text-green"> Projetos Selecionados</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-2 order-2 order-sm-2 order-lg-1"> 
+                        <div class="portfolio-navigator">
+                            <div class="navigator-counter d-none d-sm-none d-lg-block">
+                                <span class="text-green"> 01</span>
+                            </div>
+                            <nav class="item-navigator d-none d-sm-none d-lg-block">
+                                <a href="#" class="item-active" data-nav="1"></a>
+                                <a href="#" data-nav="2"></a>
+                                <a href="#" data-nav="3"></a>
+                                <a href="#" data-nav="4"></a>
+                                <a href="#" data-nav="5"></a>
+                            </nav>
+                            <div class="item-next-prev no-radius-left">
+                                <div class="item-prev">
+                                    <ion-icon name="caret-back-outline"></ion-icon>
+                                </div>
+                                <div class="item-counter">
+                                    <span class="current-slide">01</span> 
+                                    <span>/</span>
+                                    <span class="total-slide">05</span>
+                                </div>
+                                <div class="item-next">
+                                    <ion-icon name="caret-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-10 order-1 order-sm-1 order-lg-2">
+                        <div class="slider-container full-height">
+                            <ul class="slider-list full-height">
+                                <li class="portfolio-item slide-active" data-slide="1">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
+                                            <div class="portfolio-item-info text-light fade-from-left">
+                                                <h1 class="title title-large mar-bot-15"> Startup Rocketz Website</h1>
+                                                <p class="mar-bot-30"> Um ótiomo trabalho feito por um verdadeiro Web developer</p>
+                                                <a href="#" class="btn btn-large btn-green"> Ver projeto </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
+                                            <div class="portfolio-item-thumb">
+                                                <div class="portfolio-item-box d-none d-sm-none d-lg-block scale-right">                                              
+                                                </div>
+                                                <img src="imagens/thumb-1.jpg" alt="Startup Rocketz" title="Startup Rocketz" class="scale-up" >
+                                                <a href="#" class="btn btn-medium btn-dark" >Visitar site <ion-icon name="arrow-redo"></ion-icon></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="portfolio-item" data-slide="2">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
+                                            <div class="portfolio-item-info text-light">
+                                                <h1 class="title title-large mar-bot-15"> Startup Rocketz Website</h1>
+                                                <p class="mar-bot-30"> Um ótiomo trabalho feito por um verdadeiro Web developer</p>
+                                                <a href="#" class="btn btn-large btn-green"> Ver projeto </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
+                                            <div class="portfolio-item-thumb">
+                                                <div class="portfolio-item-box d-none d-sm-none d-lg-block">                                              
+                                                </div>
+                                                <img src="imagens/thumb-2.jpg" alt="Startup Rocketz" title="Startup Rocketz">
+                                                <a href="#" class="btn btn-medium btn-dark" >Visitar site <ion-icon name="arrow-redo"></ion-icon></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="portfolio-item" data-slide="3">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
+                                            <div class="portfolio-item-info text-light">
+                                                <h1 class="title title-large mar-bot-15"> Startup Rocketz Website</h1>
+                                                <p class="mar-bot-30"> Um ótiomo trabalho feito por um verdadeiro Web developer</p>
+                                                <a href="#" class="btn btn-large btn-green"> Ver projeto </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
+                                            <div class="portfolio-item-thumb">
+                                                <div class="portfolio-item-box d-none d-sm-none d-lg-block">                                              
+                                                </div>
+                                                <img src="imagens/thumb-3.jpg" alt="Startup Rocketz" title="Startup Rocketz">
+                                                <a href="#" class="btn btn-medium btn-dark" >Visitar site <ion-icon name="arrow-redo"></ion-icon></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="portfolio-item" data-slide="4">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
+                                            <div class="portfolio-item-info text-light">
+                                                <h1 class="title title-large mar-bot-15"> Startup Rocketz Website</h1>
+                                                <p class="mar-bot-30"> Um ótiomo trabalho feito por um verdadeiro Web developer</p>
+                                                <a href="#" class="btn btn-large btn-green"> Ver projeto </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
+                                            <div class="portfolio-item-thumb">
+                                                <div class="portfolio-item-box d-none d-sm-none d-lg-block">                                              
+                                                </div>
+                                                <img src="imagens/thumb-4.jpg" alt="Startup Rocketz" title="Startup Rocketz">
+                                                <a href="#" class="btn btn-medium btn-dark" >Visitar site <ion-icon name="arrow-redo"></ion-icon></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="portfolio-item" data-slide="5">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
+                                            <div class="portfolio-item-info text-light">
+                                                <h1 class="title title-large mar-bot-15"> Startup Rocketz Website</h1>
+                                                <p class="mar-bot-30"> Um ótiomo trabalho feito por um verdadeiro Web developer</p>
+                                                <a href="#" class="btn btn-large btn-green"> Ver projeto </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
+                                            <div class="portfolio-item-thumb">
+                                                <div class="portfolio-item-box">                                              
+                                                </div>
+                                                <img src="imagens/thumb-5.jpg" alt="Startup Rocketz" title="Startup Rocketz">
+                                                <a href="#" class="btn btn-medium btn-dark" >Visitar site <ion-icon name="arrow-redo"></ion-icon></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Animando Elementos on Scroll com Waypoints
+        var myScrollDown = document.querySelector('.scroll-down');
+        var waypoint = new Waypoint({
+            element: myScrollDown,
+            handler: function () {
+                myScrollDown.classList.toggle('fadeout');
+            },
+            offset: '60%'
+        });
+    </script>
+</body>
+</html>
